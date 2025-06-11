@@ -12,4 +12,22 @@ switch (operacao) {
         console.log(`Resultado: ${num1} + ${num2} = ${resultado}`);
         break;
     case '-':
+        resultado = num1 - num2;
+        console.log(`Resultado: ${num1} - ${num2} = ${resultado}`);
+        break;
+    case '*':
+        resultado = num1 * num2;
+        console.log(`Resultado: ${num1} * ${num2} = ${resultado}`);
+        break;
+    case '/':
+        if (num2 !== 0) {
+            resultado = num1 / num2;
+            console.log(`Resultado: ${num1} / ${num2} = ${resultado}`);
+        } else {
+            console.log("Erro: Divisão por zero não é permitida.");
+        }
+        break;
+    default:
+        console.log("Operação inválida. Por favor, use +, -, * ou /.");
+        break;
 }
